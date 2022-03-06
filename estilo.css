@@ -1,0 +1,270 @@
+*{
+	margin: 0;
+}
+
+body{
+	background: url('fundo.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.cabecalho{
+	width: 100%;
+	height: 150px;
+	background: #0b0c42;
+}
+
+.itens-cabecalho{
+	max-width: 95%;
+	min-width: 320px;
+	height: 55%;
+	border-bottom: 1.5px solid #e5e32b;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -10%);
+	position: relative;
+}
+
+.logo{
+	text-align: center;
+	transform: skew(-10deg) rotate(-5deg);
+	max-width: 250px;
+	cursor: pointer;
+}
+
+.titulo-logo{
+	font-size: 80px;
+	color: #e5e32b;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: 700;
+	text-shadow: -10px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.barra-pesquisa{
+	width: 700px;
+	height: 35px;
+	background: rgba(255, 255, 255, 0.5);
+	border: 2.5px solid #000000;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.pesquisa{
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.0);
+	border: 0px;
+	outline: 0;
+	font-size: 30px;
+}
+
+.compras, .usuario{
+	width: 45px;
+	height: 45px;
+	background: #e5e32b;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #6b6b6b;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.pesquisar-icon{
+	font-size: 20px;
+	margin-left: 5px;
+}
+
+.icones{
+	width: 125px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu{
+	width: 100%;
+}
+
+.menu-bar{
+	display: none;
+	margin-left: 20px;
+}
+
+.menu ul{
+	margin-top: 5px;
+}
+
+.menu ul li{
+	list-style: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 60px;
+	background: transparent;
+}
+
+.menu ul li:nth-child(1){
+	display: none;
+}
+
+.menu ul li:hover{
+	background: #0a0a32;
+}
+
+.menu ul li:hover a{
+	text-decoration: underline;
+}
+
+.login-bt-menu{
+	display: none;
+}
+
+.link-menu{
+	font-size: 25px;
+	font-weight: bolder;
+	font-family: sans-serif;
+	color: #e5e32b;
+	text-decoration: none;
+	margin: 35px;
+}
+
+.itens-responsivo{
+	max-width: 90%;
+	display: inline-flex;
+	justify-content: space-between;
+	margin-left: 10%;
+}
+
+
+@media screen and (max-width: 768px){
+
+	.itens-cabecalho{
+		border-bottom: 0;
+		display: block;
+	}
+
+	.icones{
+		width: fit-content;
+ 	   display: block;
+ 	   margin: -20px 0px 0px 90%;
+	}
+
+	.icones a .usuario{
+		display: none;
+	}
+
+	.menu{
+		width: 70%;
+		height: 100%;
+		background: #040532;
+		position: fixed;
+		visibility: hidden;
+	}
+
+	.menu ul:not(.submenu){
+		width: 70%;
+		padding: 10%;
+		margin-left: 30px;
+	}
+
+	.menu ul li{
+		width: 100%;
+		background: #0b0c42;
+		margin-bottom: 5px;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.menu ul li:nth-child(1){
+		width: 100%;
+		height: fit-content;
+		background: #0b0c42;
+		display: block;
+		position: relative;
+		padding: 20px 0px 20px 0px;
+	}
+
+	.menu ul li:nth-child(1) .submenu li{
+		background: #040532;
+		width: 100%;
+		height: 65px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+	}
+
+	.menu ul{
+		margin-top: 20px;
+	}
+
+	.submenu{
+		width: 100%;
+		height: fit-content;
+		margin: 20px 0 -20px -40px;
+		display: none;
+	}
+
+	.menu-bar{
+		font-size: 2rem;
+		display: block;
+		margin: 10px 0px 0px 30px;
+		visibility: visible;
+	}
+
+	.cor{
+		color: #ff0000;
+		background-image: linear-gradient(180deg, #af8af2, #16188b);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+
+	}
+
+	.menu-clicado{
+		width: 40px;
+		height: 35px;
+		padding: 10px;
+		background: #040532;
+		text-align: center;
+		border-radius: 30px 30px 0 0;
+		margin: 0 0 0 12px;
+	}
+
+	.visible{
+		visibility: visible;
+	}
+
+	.abcd{
+		display: block;
+	}
+
+	.titulo-logo{
+		font-size: 3rem;
+	}
+
+	.logo{
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-70%) skew(-10deg) rotate(-5deg);;
+		position: relative;
+	}
+
+	.barra-pesquisa{
+		width: 70%;
+		top: 50%;
+		left: 50%;
+    	transform: translate(-56%, -50%);
+		position: relative;
+		margin: 5px 0px 0px 20px;
+	}
+}
