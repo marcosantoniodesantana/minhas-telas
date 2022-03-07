@@ -17,5 +17,5 @@ let menubt = document.querySelector('#menu-bar').addEventListener("click", () =>
 
 let linkConta = document.querySelector('.menu > ul > li:nth-child(1)').addEventListener("click", ()=>{
 	let subMenuOptions = document.querySelector('.submenu');
-		subMenuOptions.classList.toggle('abcd');
+		subMenuOptions.classList.toggle('menu-option-visible');
 });
