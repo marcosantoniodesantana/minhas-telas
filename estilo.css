@@ -143,6 +143,37 @@ body{
 	margin-left: 10%;
 }
 
+.mostruario{
+	margin: 1%;
+}
+
+.vitrine{
+	margin-top: 2%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.itens{
+	width: 435.5px;
+	height: 209.25px;
+	margin-left: 5px;
+}
+
+.itens img{
+	width: 100%;
+	height: 100%;
+}
+
+.mostruario h1{
+	font-size: 2.5rem;
+	font-family: 'Be Vietnam Pro', sans-serif;
+	font-weight: 800;
+}
+
+p{
+	margin-top: 100%;
+}
 
 @media screen and (max-width: 768px){
 
@@ -163,7 +194,7 @@ body{
 
 	.menu{
 		width: 70%;
-		height: 100%;
+		height: 80%;
 		background: #040532;
 		position: fixed;
 		visibility: hidden;
