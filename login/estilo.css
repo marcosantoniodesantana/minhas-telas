@@ -30,8 +30,11 @@ body{
 	position: relative;
 }
 
+.itens-cabecalho a{
+	text-decoration: none;
+}
+
 .logo{
-	text-align: center;
 	transform: skew(-10deg) rotate(-5deg);
 	max-width: 250px;
 	cursor: pointer;
@@ -83,10 +86,9 @@ body{
 }
 
 .icones{
-	width: 125px;
+	width: fit-content;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 }
 
 .menu{
@@ -229,16 +231,25 @@ button span{
 }
 
 @media screen and (max-width: 768px){
+	.cabecalho:not(.menu){
+		height: 75px;
+		display: flex;
+		align-items: flex-end;
+		padding-bottom: 35px;
+	}
 
 	.itens-cabecalho{
+		width: fit-content;
 		border-bottom: 0;
-		display: block;
+	    display: flex;
+  	    align-items: center;
+    	justify-content: center;
 	}
 
 	.icones{
 		width: fit-content;
- 	   display: block;
- 	   margin: -20px 0px 0px 89%;
+ 	    display: block;
+		margin: -20px 0px 0px 55%;
 	}
 
 	.icones a .usuario{
@@ -246,6 +257,7 @@ button span{
 	}
 
 	.menu{
+		top: 100px;
 		width: 70%;
 		height: 80%;
 		background: #040532;
@@ -311,9 +323,11 @@ button span{
 	}
 
 	.menu-bar{
+		width: fit-content;
 		font-size: 2rem;
 		display: block;
-		margin: 10px 0px 0px 30px;
+		/*margin: 10px 0px 0px 30px;*/
+		margin: 0 0 0 29px;
 		visibility: visible;
 	}
 
@@ -344,13 +358,13 @@ button span{
 	}
 
 	.titulo-logo{
-		font-size: 3rem;
+		font-size: 3.5rem;
 	}
 
 	.logo{
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%,-70%) skew(-10deg) rotate(-5deg);;
+		transform: translate(-50%,-50%) skew(-10deg) rotate(-5deg);;
 		position: relative;
 	}
 
