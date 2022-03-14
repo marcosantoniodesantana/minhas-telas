@@ -197,7 +197,7 @@ p{
 		width: 70%;
 		height: 80%;
 		background: #040532;
-		position: fixed;
+		position: absolute;
 		visibility: hidden;
 		overflow-x: auto;
 		z-index: 1;
