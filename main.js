@@ -19,3 +19,10 @@ let linkConta = document.querySelector('.menu > ul > li:nth-child(1)').addEventL
 	let subMenuOptions = document.querySelector('.submenu');
 		subMenuOptions.classList.toggle('menu-option-visible');
 });
+
+document.querySelectorAll(".vitrine > .itens").forEach( function(elm){
+	elm.setAttribute('data-aos', 'fade-up');
+	elm.setAttribute('data-aos-duration', '2000');
+});
+
+//IMPORTANTE!!!!!! => https://michalsnik.github.io/aos/
