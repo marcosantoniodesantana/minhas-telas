@@ -200,6 +200,7 @@ p{
 		position: fixed;
 		visibility: hidden;
 		overflow-x: auto;
+		z-index: 1;
 	}
 
 	.menu ul:not(.submenu){
