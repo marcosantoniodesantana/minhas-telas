@@ -8,6 +8,16 @@ body{
 	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
+	overflow: overlay;
+}
+
+::-webkit-scrollbar{
+	width: 10px;
+	background: transparent;
+}
+::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background: #5d468d;
 }
 
 .cabecalho{
@@ -40,7 +50,8 @@ body{
 .titulo-logo{
 	font-size: 80px;
 	color: #e5e32b;
-	font-family: 'Merriweather Sans', sans-serif;
+	/*font-family: 'Merriweather Sans', sans-serif;*/
+	font-family: sans-serif;
 	font-weight: 700;
 	text-shadow: -10px 0px 10px rgba(0, 0, 0, 0.5);
 }
@@ -144,26 +155,9 @@ body{
 }
 
 .mostruario{
-	margin: 1%;
-	background:#301fbbc4;
-}
-
-.vitrine{
-	margin-top: 2%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.itens{
-	width: 435.5px;
-	height: 209.25px;
-	margin-left: 5px;
-}
-
-.itens img{
+	margin-top: 1%;
 	width: 100%;
-	height: 100%;
+	height: fit-content;
 }
 
 .mostruario h1{
@@ -171,6 +165,33 @@ body{
 	font-family: 'Be Vietnam Pro', sans-serif;
 	font-weight: 800;
 }
+
+.vitrine{
+	width: 100%;
+	height: 230px;
+	margin-top: 2%;
+	display: flex;
+	justify-content: space-around;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+.itens{
+	width: 435.5px;
+	height: 209.25px;
+	position: relative;
+	display: block;
+}
+
+.itens img{
+	width: 100%;
+	height: 100%;
+	background: #ffffff;
+	border-radius: 5px;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5),
+				5px 5px 10px inset rgba(0, 0, 0, 0.1);
+}
+
 
 p{
 	margin-top: 100%;
