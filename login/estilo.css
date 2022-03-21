@@ -211,6 +211,7 @@ input[type="text"]{
 
 .botoes{
 	margin-top: 5%;
+	width: 100%;
 }
 
 .botoes button{
