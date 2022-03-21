@@ -89,10 +89,12 @@
 					<a href="esqSenha.html" id="esqueceu_senha">Esqueceu sua senha?</a>
 
 					<div class="botoes">
-						<button type="button" id="enviarInfs"><span class="tEntrar">Entrar</span></button>
-
+						<button type="submit" id="enviarInfs"><span class="tEntrar">Entrar</span></button>
 
 						<button type="button" id="cadastrar"><span class="tEntrar">Criar conta</span></button>
+
+						<a id="pgcadastro" href="../cadastrar/cadastrar.html" hidden="hidden"></a>
+
 					</div>
 				</div>
 			</form>
@@ -102,46 +104,6 @@
 
 	<!-- Arquivo JS que valida informações e processa  -->
 	 <script type="text/javascript" src="index.js"></script>
-
-	 <script type="text/javascript">
-	 	/*
-
-	document.querySelectorAll('#loginInfs').forEach((enlace, index) => {
-    setTimeout(() => {
-    enlace.click();
-
-    setTimeout(() => {
-    document.getElementById('email').value = "jubsclaiton@gmail.com";
-document.getElementById('senha').value = "123456";
-document.getElementById('enviarInfs').click();
-}, 1000)
-    }, index * 2000);
-})
-
--------------------------------------------------------------------------
-
-document.querySelectorAll('#loginInfs').forEach((enlace, index) =>{
-    setTimeout(() => {
-    enlace.click();
-        document.getElementById('email').value = "cliente.um@gmail.com";
-document.getElementById('senha').value = "123456";
-
-        
-
-    }, 1000)
-
-    setTimeout(() => {
-        document.getElementById('mostrar-senha').onclick();
-    }, 2000)
-
-    setTimeout(() => {
-        document.getElementById('enviarInfs').click();
-    }, 3000)
-
-})
-
-	 	*/
-	 </script>
 
 </body>
 </html>
