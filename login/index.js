@@ -3,7 +3,7 @@ var senha = document.getElementById('senha');
 var btEntrar = document.getElementById("enviarInfs");
 var inputBotao = document.getElementById("fazerLogin");
 var btCadastrar = document.getElementById('cadastrar');
-var linkCadastro = document.getElementById('pgCadastro');
+var linkCadastro = document.getElementById('pgcadastro');
 
 var verSenha = document.getElementById('mostrar-senha');
 
