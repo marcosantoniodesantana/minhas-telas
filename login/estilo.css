@@ -329,6 +329,10 @@ button span{
 		align-items: center;
 		justify-content: center;
 	}
+	
+	.link-menu{
+		margin: 0;
+	}
 
 	.menu-bar{
 		width: fit-content;
