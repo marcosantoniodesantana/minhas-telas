@@ -17,8 +17,7 @@ body{
 }
 
 .itens-cabecalho{
-	max-width: 95%;
-	min-width: 320px;
+	width: 95%;
 	height: 55%;
 	border-bottom: 1.5px solid #e5e32b;
 	display: flex;
@@ -240,17 +239,25 @@ button span{
 	}
 
 	.itens-cabecalho{
-		width: fit-content;
+		width: 80%;
+		height: 100%;
 		border-bottom: 0;
 	    display: flex;
+	    top: 75%;
+	    left: 5%;
+	    transform: translate(0%,-50%);
+	    position: relative;
   	    align-items: center;
-    	justify-content: center;
+	}
+
+	.itens-cabecalho a{
+		left: 50%;
+		transform: translate(-50%, 0);
+		position: relative;
 	}
 
 	.icones{
 		width: fit-content;
- 	    display: block;
-		margin: -20px 0px 0px 55%;
 	}
 
 	.icones a .usuario{
@@ -363,10 +370,6 @@ button span{
 	}
 
 	.logo{
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%,-50%) skew(-10deg) rotate(-5deg);;
-		position: relative;
 	}
 
 	.barra-pesquisa{
@@ -380,5 +383,24 @@ button span{
 
 	section{
 		width: 70%;
+	}
+}
+
+@media screen and (max-width: 410px){
+
+	.itens-cabecalho{
+		left: 0;
+	}
+
+	.itens-cabecalho a{
+		
+	}
+
+	.logo{
+		width: fit-content;
+	}
+
+	.logo .titulo-logo{
+		font-size: 2.5rem;
 	}
 }
