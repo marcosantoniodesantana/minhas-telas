@@ -17,7 +17,8 @@ body{
 }
 ::-webkit-scrollbar-thumb{
 	border-radius: 10px;
-	background: #5d468d;
+	background: rgba(93, 70, 141, 1.0);
+	transition: 1s;
 }
 
 .cabecalho{
@@ -277,6 +278,10 @@ p{
 		display: flex;
 		align-items: center;
 		justify-content: center;
+	}
+
+	.link-menu{
+		margin: 0;
 	}
 
 	.menu-bar{
