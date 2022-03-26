@@ -197,6 +197,13 @@ body{
 				5px 5px 10px inset rgba(0, 0, 0, 0.22);
 }
 
+.setas{
+	width: fit-content;
+	align-items: center;
+	justify-content: center;
+	margin-left: 90%;
+}
+
 .seta{
 	width: 60px;
 	height: 30px;
@@ -206,11 +213,10 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-left: 92%;
 }
 
 .anterior{
-	margin-left: 86%;
+	margin-left: -7%;
 	transform: rotate(180deg);
 }
 
@@ -361,5 +367,17 @@ p{
     	transform: translate(-56%, -50%);
 		position: relative;
 		margin: 5px 0px 0px 20px;
+	}
+
+	.setas{
+		margin-left: 80%;
+	}
+
+	.anterior{
+		margin-left: -65px;
+	}
+
+	.vitrine{
+		margin-top: 10%;
 	}
 }
