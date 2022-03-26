@@ -174,7 +174,6 @@ body{
 	display: flex;
 	align-items: center;
 	overflow: auto;
-	transition-duration: 5s;
 }
 
 .vitrine::-webkit-scrollbar-thumb{
