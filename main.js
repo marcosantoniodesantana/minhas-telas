@@ -25,4 +25,16 @@ document.querySelectorAll(".vitrine > .itens").forEach( function(elm){
 	elm.setAttribute('data-aos-duration', '2000');
 });
 
+let vitrine = document.querySelector('.vitrine');
+
+let btProximo = document.querySelector(".proximo");
+btProximo.addEventListener("click", () =>{
+	 vitrine.scrollBy(350, 0);
+});
+
+let btAnterior = document.querySelector('.anterior');
+btAnterior.addEventListener("click", ()=> {
+	vitrine.scrollBy(-350, 0);
+});
+
 //IMPORTANTE!!!!!! => https://michalsnik.github.io/aos/
