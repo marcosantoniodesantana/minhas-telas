@@ -20,20 +20,18 @@ let linkConta = document.querySelector('.menu > ul > li:nth-child(1)').addEventL
 		subMenuOptions.classList.toggle('menu-option-visible');
 });
 
-document.querySelectorAll(".vitrine > .itens").forEach( function(elm){
-	elm.setAttribute('data-aos', 'fade-up');
-	elm.setAttribute('data-aos-duration', '2000');
+document.querySelectorAll(".vitrine > .itens").forEach((iten) =>{
+	iten.setAttribute('data-aos', 'fade-up');
+	iten.setAttribute('data-aos-duration', '2000');
 });
 
 let vitrine = document.querySelector('.vitrine');
 
-let btProximo = document.querySelector(".proximo");
-btProximo.addEventListener("click", () =>{
+document.querySelector(".proximo").addEventListener("click", () =>{
 	 vitrine.scrollBy(350, 0);
 });
 
-let btAnterior = document.querySelector('.anterior');
-btAnterior.addEventListener("click", ()=> {
+document.querySelector('.anterior').addEventListener("click", ()=> {
 	vitrine.scrollBy(-350, 0);
 });
 
