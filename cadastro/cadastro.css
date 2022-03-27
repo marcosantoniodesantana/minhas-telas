@@ -344,7 +344,7 @@ a:hover:not(.link-inicio){
 @media screen and (max-width: 768px){
 
 	.cadastro-geral{
-	width: 300px;
+		width: 70%;
 	}
 
 	.itens{
@@ -504,6 +504,13 @@ a:hover:not(.link-inicio){
 		font-size: 3.5rem;
 	}
 
-	.logo{
+	.tela-termos{
+		width: 70%;
+		height: 80%;
+	}
+
+	.tela-termos .itens{
+		display: flex;
+		justify-content: center;
 	}
 }
