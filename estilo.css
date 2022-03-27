@@ -170,7 +170,7 @@ body{
 
 .vitrine{
 	width: 100%;
-	height: 300px;
+	height: 350px;
 	margin-top: 2%;
 	display: flex;
 	align-items: center;
@@ -187,6 +187,7 @@ body{
 	height: fit-content;
 	position: relative;
 	margin: 0 50px 0 50px;
+	overflow-wrap: anywhere;
 }
 
 .itens img{
@@ -196,13 +197,20 @@ body{
 	border-radius: 5px;
 	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5),
 				5px 5px 10px inset rgba(0, 0, 0, 0.22);
+	transition: 0.5s;
+	position: relative;
+}
+
+.itens img:hover{
+	width: 277.21px;
+	height: 282.85px;
 }
 
 .setas{
 	width: fit-content;
 	align-items: center;
 	justify-content: center;
-	margin-left: 90%;
+	margin-left: 92%;
 }
 
 .seta{
@@ -214,6 +222,7 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	cursor: pointer;
 }
 
 .anterior{
