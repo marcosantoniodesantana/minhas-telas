@@ -251,7 +251,7 @@ telefone.addEventListener("keypress", ()=>{
 		telefone.value += "(";
 	} else if(telefoneFormatado === 3){
 		telefone.value += ") ";
-	} else if (telefoneFormatado === 11) {
+	} else if (telefoneFormatado === 10) {
 		telefone.value += "-";
 	}
 });
