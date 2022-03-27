@@ -230,3 +230,28 @@ function marcaBt(){
 		//console.log('Caixa desmarcada');
 	}
 }
+
+const cpf = document.querySelector("#cpf");
+
+cpf.addEventListener("keypress", () =>{
+	let cpfFormatado = cpf.value.length;
+	
+	if (cpfFormatado === 3 || cpfFormatado === 7) {
+		cpf.value += ".";
+	} else if(cpfFormatado === 11){
+		cpf.value += "-";
+	}
+});
+
+const telefone = document.querySelector("#telefone");
+telefone.addEventListener("keypress", ()=>{
+	let telefoneFormatado = telefone.value.length;
+
+	if (telefoneFormatado === 0) {
+		telefone.value += "(";
+	} else if(telefoneFormatado === 3){
+		telefone.value += ") ";
+	} else if (telefoneFormatado === 11) {
+		telefone.value += "-";
+	}
+});
