@@ -242,6 +242,29 @@ footer{
 	margin-top: 100%;
 }
 
+footer .redes-sociais{
+	width: 100px;
+	height: 350px;
+	margin: 5% 0% 0 5%;
+	position: absolute;
+	text-align: center;
+}
+
+footer a{
+	text-decoration: none;
+}
+
+footer i{
+	color: #e5e32b;
+	font-size: 5rem;
+}
+
+footer h2{
+	color: #cdcccc;
+	font-size: 14px;
+	font-family: sans-serif;
+}
+
 @media screen and (max-width: 768px){
 
 	.itens-cabecalho{
