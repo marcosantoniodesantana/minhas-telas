@@ -1,3 +1,4 @@
+/*
 corrigirTitulo();
 
 
@@ -7,12 +8,11 @@ function corrigirTitulo(){
 	const tituloProduto = document.querySelectorAll(".titulo-produto");
 
 	listaTitulo.push(tituloProduto);
-/*
+
 	listaTitulo.forEach((listaTitulo)=>{
 		console.log(listaTitulo);
 		document.querySelector(".titulo-produto").classList.toggle("base");
 	});
-	*/
 
 	const filtro = listaTitulo.filter(()=>{
 		if (listaTitulo.value.length <= 20) {
@@ -20,6 +20,7 @@ function corrigirTitulo(){
 		}
 	});
 }
+*/
 
 let menubt = document.querySelector('#menu-bar').addEventListener("click", () =>{
 	let menuOptions = document.querySelector('.menu');
