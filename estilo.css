@@ -230,7 +230,7 @@ body{
 
 .botoes{
 	border-top: 1px solid #e9e6e6;
-	background: #ff0000;
+	background: #ffffff;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -481,6 +481,29 @@ footer h2{
 	}
 
 	.vitrine{
-		margin-top: 10%;
+		margin-top: 13%;
 	}
+
+	.setas{
+		display: none;
+	}
+
+	.mostruario h1{
+	    top: 18%;
+    	position: absolute;
+	    font-size: 1.5rem;
+	}
+
+	footer{
+		height: 300px;
+	}
+
+	.copyright {
+    height: 60%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+
 }
