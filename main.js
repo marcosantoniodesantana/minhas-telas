@@ -1,26 +1,35 @@
-/*
-corrigirTitulo();
+//Código responsavél por inserir titulo com limitação e corte nas tags marcadas com o id titulo-item
+	let listaTitulo = [
+		"Camisa Ousa Desafiar o Deus da Guerra",
+		"Camisa Escanor Body Builder",
+		"Camisa Social Ninja",
+		"Moletom Ninja",
+		"Camisa Zabuza Momochi",
+		"Camisa Colisão",
+		"Camisa a Arte é Uma Explosão, BOOM!"
+	];
 
+	const tituloProduto = document.querySelectorAll("#titulo-item");
+	console.log(tituloProduto.length)
 
-function corrigirTitulo(){
-	let listaTitulo = [];
+	for (var i = 0; i < tituloProduto.length; i++) {
+		//document.write(tituloProduto[i].innerHTML = listaTitulo)
+		tituloProduto[i].innerHTML = listaTitulo[i+0];
 
-	const tituloProduto = document.querySelectorAll(".titulo-produto");
+		const limite = 28;
 
-	listaTitulo.push(tituloProduto);
-
-	listaTitulo.forEach((listaTitulo)=>{
-		console.log(listaTitulo);
-		document.querySelector(".titulo-produto").classList.toggle("base");
-	});
-
-	const filtro = listaTitulo.filter(()=>{
-		if (listaTitulo.value.length <= 20) {
-			document.querySelector(".titulo-produto").classList.toggle("base");
+		for (let analise of tituloProduto){
+			const verifica = analise.innerText.length > limite;
+			const pontos = verifica ? "..." : "";
+			analise.innerText = analise.innerText.substring(0, limite) + pontos;
 		}
-	});
-}
-*/
+
+		if (tituloProduto[i].innerText.length < 28) {
+			tituloProduto[i].classList.toggle("altura");
+		}
+	}
+
+//Parte responsavél por fazer a execução do menu
 
 let menubt = document.querySelector('#menu-bar').addEventListener("click", () =>{
 	let menuOptions = document.querySelector('.menu');
