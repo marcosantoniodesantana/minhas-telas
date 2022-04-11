@@ -209,7 +209,7 @@ body{
 	position: relative;
 }
 
-.itens img:hover{
+.itens:hover img{
 	width: 277.21px;
 	height: 282.85px;
 }
