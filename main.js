@@ -18,10 +18,6 @@
 		tituloProduto[i].innerHTML = listaTitulo[i+0];
 
 		let limite = 28;
-		tituloProduto[i].addEventListener("mouseover", ()=>{
-			//console.log("a")
-			return limite = 40;
-		})
 
 		for (let analise of tituloProduto){
 			const verifica = analise.innerText.length > limite;
@@ -32,7 +28,6 @@
 		if (tituloProduto[i].innerText.length < 28) {
 			tituloProduto[i].classList.toggle("altura");
 		}
-
 	}
 
 //Parte responsavél por fazer a execução do menu
