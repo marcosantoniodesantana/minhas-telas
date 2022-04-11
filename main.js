@@ -59,6 +59,17 @@ document.querySelectorAll(".vitrine > .itens").forEach((iten) =>{
 	iten.setAttribute('data-aos-duration', '2000');
 });
 
+let intensVitrine = document.querySelectorAll(".itens");
+
+for(let iv = 0; iv < intensVitrine.length; iv++){
+	intensVitrine[iv].addEventListener("mouseover", ()=>{
+		//console.log(limite.value)
+		//console.log(iv)
+		//return limite = 40;
+	})
+}
+
+
 let vitrine = document.querySelector('.vitrine');
 
 document.querySelector(".proximo").addEventListener("click", () =>{
