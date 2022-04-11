@@ -235,6 +235,16 @@ body{
 	text-align: center;
 }
 
+.area-precos{
+	margin-top: 3.5%
+}
+
+.preco{
+	color: #9764bb;
+	font-size: 1.3em;
+	font-family: sans-serif;
+}
+
 .botoes{
 	border-top: 1px solid #e9e6e6;
 	background: #ffffff;
