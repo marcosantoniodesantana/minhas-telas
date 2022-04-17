@@ -89,6 +89,10 @@ body{
 	cursor: pointer;
 }
 
+.compras, .usuario:hover{
+
+}
+
 .pesquisar-icon{
 	font-size: 20px;
 	margin-left: 5px;
@@ -170,8 +174,8 @@ body{
 
 .vitrine{
 	width: 100%;
-	height: 350px;
-	margin-top: 4%;
+	height: 390px;
+	margin-top: 3%;
 	display: flex;
 	align-items: center;
 	overflow: auto hidden;
@@ -268,7 +272,7 @@ body{
 	width: fit-content;
 	align-items: center;
 	justify-content: center;
-	margin-left: 92%;
+	margin: -1% 0 0 92%;
 }
 
 .seta{
@@ -420,7 +424,7 @@ footer h2{
 
 	.menu{
 		width: 70%;
-		height: 80%;
+		height: 100%;
 		background: #040532;
 		position: absolute;
 		visibility: hidden;
@@ -564,7 +568,7 @@ footer h2{
 
 	.menu{
 		width: 70%;
-		height: 80%;
+		height: 100%;
 		background: #040532;
 		position: absolute;
 		visibility: hidden;
