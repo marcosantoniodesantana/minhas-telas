@@ -17,7 +17,7 @@
 		//document.write(tituloProduto[i].innerHTML = listaTitulo)
 		tituloProduto[i].innerHTML = listaTitulo[i+0];
 
-		let limite = 28;
+		let limite = 20;
 
 		for (let analise of tituloProduto){
 			const verifica = analise.innerText.length > limite;
@@ -25,7 +25,7 @@
 			analise.innerText = analise.innerText.substring(0, limite) + pontos;
 		}
 
-		if (tituloProduto[i].innerText.length < 28) {
+		if (tituloProduto[i].innerText.length < limite) {
 			tituloProduto[i].classList.toggle("altura");
 		}
 
@@ -64,11 +64,9 @@ document.querySelectorAll(".vitrine > .itens").forEach((iten) =>{
 	iten.setAttribute('data-aos-duration', '2000');
 });
 
-
-
 let vitrine = document.querySelector('.vitrine');
 
-document.querySelector(".proximo").addEventListener("click", () =>{
+let rolarDireita =  document.querySelector(".proximo").addEventListener("click", () =>{
 	 vitrine.scrollBy(350, 0);
 });
 
