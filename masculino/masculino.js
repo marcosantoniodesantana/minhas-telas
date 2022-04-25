@@ -1,18 +1,11 @@
 //Código responsavél por inserir titulo com limitação e corte nas tags marcadas com o id titulo-item
 let listaTitulo = [
-    "Camisa Aktsuki",
-    "Camisa Deidara",
-    "Camisa Kratos",
-    "Camisa Zabuza",
     "Chihiro Tradicional",
-    "Colisão",
     "Elemento X Tradicional",
     "Kamado Brothers",
     "Kaonashi",
     "Kiuubi",
     "Mariochu",
-    "Moleton Akatsuki",
-    "Moleton Escanor",
     "The Starry Cat Tradicional Black",
     "The Starry Cat Tradicional",
     "Yu-Gi-Oh Exomedia",
@@ -20,7 +13,7 @@ let listaTitulo = [
     "Espirito De Dragão",
     "Kimetsu Masks",
     "Moonligth",
-    "Science time",
+    "Science Time",
     "Titans",
     "Yin Yan Dragons"
 ];
