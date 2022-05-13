@@ -159,6 +159,17 @@ body{
 	margin-left: 10%;
 }
 
+.area-banner{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.area-banner img{
+	width: 90%;
+}
+
 .mostruario{
 	margin-top: 1%;
 	width: 100%;
@@ -525,6 +536,10 @@ footer h2{
 		margin: 5px 0px 0px 20px;
 	}
 
+	.area-banner img{
+		width: 100%;
+	}
+
 	.setas{
 		display: none;
 	}
@@ -684,6 +699,7 @@ footer h2{
 	.setas{
 		display: none;
 	}
+	
 
 	.mostruario h1{
 	    margin-top: 5%;
