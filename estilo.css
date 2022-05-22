@@ -177,6 +177,7 @@ body{
 	display: flex;
 	overflow: auto hidden;
 	flex-wrap: wrap;
+	position: absolute;
 }
 
 /*Por alguma razão que eu desconheço, o seletor nth-child(2) seleciona a primeira class (mostruario)*/
@@ -192,6 +193,10 @@ body{
 	transform: translate(0%,0%);
 	margin-top: 6%;
 	position: relative;
+}
+
+.mostruario-secoes .vitrine-item .itens{
+	margin: 10px 10px 50px 5px;
 }
 
 .mostruario h1{
@@ -234,15 +239,18 @@ body{
 }
 
 .itens{
-	width: fit-content;
-	height: fit-content;
-	position: relative;
+	width: 217.21px;
+	height: 264.45px;
+	display: block;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
 	margin: 0 30px 0 30px;
 	background: #fff;
-	overflow-wrap: anywhere;
+	position: relative;
 }
 
-.itens img{
+.itens .img-item{
 	/*
 		width: 247.21px;
 	height: 252.85px;
@@ -252,18 +260,28 @@ body{
 	background: #ffffff;
 	border-bottom: 5px solid #601f8e;
 	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	box-shadow: 5px 5px 10px inset rgba(0, 0, 0, 0.22);
-	transition: 0.5s;
 	position: relative;
+	overflow: hidden;
 }
 
-.itens:hover{
-	z-index: 5;
+.img-item img{
+	width: 90%;
+	height: 90%;
+	position: relative;
+	transition: 0.5s;
 }
 
-.itens:hover img{
+.itens:hover .img-item img{
+	/*
 	width: 277.21px;
 	height: 282.85px;
+	*/
+	width: 100%;
+	height: 100%;
 }
 
 .altura{
@@ -317,10 +335,10 @@ body{
 }
 
 .setas{
-	width: fit-content;
-	align-items: center;
-	justify-content: center;
-	margin: -1% 0 0 92%;
+	width: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
 }
 
 .seta{
@@ -328,16 +346,21 @@ body{
 	height: 30px;
 	overflow: hidden;
 	background: #0e0e3c;
-	position: absolute;
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
+	z-index: 1;
 }
 
 .anterior{
-	margin-left: -5%;
+	margin-left: 2.2%;
 	transform: rotate(180deg);
+}
+
+.proximo{
+	margin-right: 0.5%;
 }
 
 .seta i{
@@ -349,8 +372,8 @@ footer{
 	width: 100%;
 	height: 500px;
 	background: #0a0a32;
-	margin-top: 50%;
-	overflow: hidden;
+	margin-top: 100%;
+	position: absolute;
 }
 
 .itens-rodape{
@@ -371,12 +394,19 @@ footer a{
 	text-decoration: none;
 }
 
-footer i{
-	color: #cdcccc;
-	font-size: 6rem;
+footer a i{
+	color: #e5e32b;
+	font-size: 13rem;
 }
 
-footer i:hover{
+.titulo-logo-inferior{
+	color: #e5e32b;
+	font-family: sans-serif;
+	font-size: 4rem;
+	margin-top: 5px;
+}
+
+footer a i:hover{
 	color: #e5e32b;
 }
 
@@ -545,6 +575,14 @@ footer h2{
 	.setas{
 		display: none;
 	}
+
+	.divisoes-rodape a i{
+		font-size: 4rem;
+	}
+
+	.titulo-logo-inferior{
+		font-size: 2rem;
+	}
 }
 
 @media screen and (max-width: 768px){
@@ -711,11 +749,11 @@ footer h2{
 
 	footer{
 		height: 300px;
+		margin-top: 200%;
 	}
 
 	.itens-rodape{
 		display: block;
-		height: 100%;
 		position: relative;
 		align-items: center;
 		justify-content: center;
@@ -729,13 +767,7 @@ footer h2{
 	}
 
 	.copyright {
-	    top: -50%;
-	    left: 50%;
-	    transform: translate(-50%, -70%);
-    	display: flex;
- 	   	align-items: flex-end;
-	    justify-content: center;
-    	position: relative;
+	    top: 90%;
 	}
 
 }
