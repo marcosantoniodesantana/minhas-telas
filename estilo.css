@@ -269,8 +269,8 @@ body{
 }
 
 .img-item img{
-	width: 90%;
-	height: 90%;
+	width: 100%;
+	height: 100%;
 	position: relative;
 	transition: 0.5s;
 }
@@ -280,8 +280,8 @@ body{
 	width: 277.21px;
 	height: 282.85px;
 	*/
-	width: 100%;
-	height: 100%;
+	width: 120%;
+	height: 120%;
 }
 
 .altura{
