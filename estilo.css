@@ -280,8 +280,7 @@ body{
 	width: 277.21px;
 	height: 282.85px;
 	*/
-	width: 120%;
-	height: 120%;
+	transform: scale(1.12);
 }
 
 .altura{
