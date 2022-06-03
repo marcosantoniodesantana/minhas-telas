@@ -49,6 +49,9 @@ let menubt = document.querySelector('#menu-bar').addEventListener("click", () =>
 		menuIcon.classList.toggle('fa-bars');
 		document.querySelector('#menu-bar').classList.remove('menu-clicado');
 	}
+
+	document.querySelector(".cabecalho").classList.toggle("camada");
+
 });
 
 document.querySelector(".menu > ul > li:nth-child(2)").classList.toggle("marcador-pagina");
