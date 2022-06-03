@@ -403,8 +403,17 @@ footer .divisoes-rodape{
 
 .forma-pagamentos{
 	width: 100%;
-	height: 25px;
-	background: #ff0000;
+	display: flex;
+	margin-top: 2.5%;
+}
+
+.tipo-forma-pagamento{
+	width: 50px;
+	margin-left: 5px;
+}
+
+.tipo-forma-pagamento img{
+	width: 100%;
 }
 
 footer a{
