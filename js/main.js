@@ -68,6 +68,13 @@ document.querySelectorAll(".vitrine > .itens").forEach((iten) =>{
 	iten.setAttribute('data-aos-duration', '2000');
 });
 
+//Munitora a caixa de pesquisa
+
+let caixaPesquisa = document.querySelector("#pesquisa");
+caixaPesquisa.addEventListener("input", ()=>{
+	document.querySelector(".barra-pesquisa").classList.toggle("pesquisando");
+});
+
 //Rolagem para as laterais
 
 let vitrine = document.querySelector('.vitrine');
