@@ -76,6 +76,10 @@ body{
 	font-size: 30px;
 }
 
+.pesquisando{
+	border: 5px solid #e5e32b;
+}
+
 .compras, .usuario{
 	width: 45px;
 	height: 45px;
