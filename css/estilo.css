@@ -548,6 +548,10 @@ footer h2{
 		display: block;
 		margin: 10px 0px 0px 30px;
 		visibility: visible;
+		/*
+		    position: relative;
+    inset: -54px 0px 0px 1px;
+	*/
 	}
 
 	.cor{
